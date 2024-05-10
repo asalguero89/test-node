@@ -1,8 +1,7 @@
-sudo : required
+sudo: required
 services:
- - docker
+  - docker
 
- script:
+script:
   - docker build -t algofields/node .
   - docker images algofields/node
-
